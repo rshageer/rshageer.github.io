@@ -1,0 +1,20 @@
+.bold {
+  font-weight: 900;
+}
+
+.semi-bold {
+  font-weight: 700;
+}
+
+.highlight-keywords strong{
+  color: var(--highlight-clr, var(--clr-accent2-400));
+  font-weight: inherit;
+}
+
+.article-width {
+  max-width: var(--article-width, 75ch);
+}
+
+.align-center{
+  text-align: center;
+}

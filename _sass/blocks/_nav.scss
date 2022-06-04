@@ -1,0 +1,112 @@
+.menu{
+  --nav-active-clr:var(--logo-clr-1) ;
+  a{
+    text-decoration: none;
+    color: var(--nav-clr);
+    display: inline-block;
+
+    &:hover{
+      color: var(--logo-clr-2);
+      border-bottom: 2px solid var(--nav-active-clr);
+    }
+
+    &.active {
+      color: var(--nav-active-clr);
+      border-bottom: 2px solid var(--nav-active-clr);
+
+      &:hover{
+        text-decoration: none;
+      }
+    }
+
+  }
+
+  button {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border:none;
+    display: none;
+    @media screen and (max-width:$bp-nav) {
+      display: block;
+    }
+  }
+
+  ul{
+    & > *:not(button) {
+      display: inline-block;
+    }
+    & > * + *{
+      margin-left: var(--spc-400);
+    }
+
+    @media screen and (max-width: $bp-nav) {
+      --nav-clr: --var(--bg-color);
+      position: absolute;
+      top: 0;
+      left: 100vw;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      visibility: hidden;
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+      padding: var(--spc-400);
+      background-color: var(--font-color);
+
+      font-size: var(--font-size-600);
+      color: var(--bg-color);
+
+      transition-property: left;
+      transition: 250ms ease-in-out;
+      & > li {
+        align-self: center;
+        margin: var(--spc-400);
+      }
+
+      & > button {
+        align-self: end;
+      }
+
+      a:hover{
+        color: var(--nav-active-clr);
+      }
+    }
+    
+    &.open{
+      top: 0;
+      left: 0;
+      visibility: visible;
+    }
+  }
+
+  svg{
+    height: var(--spc-500);
+    width: var(--spc-500);
+
+    &:hover{
+      --nav-clr: var(--logo-clr-2)
+    }
+    
+    rect{
+      fill: var(--icon-color,var(--nav-clr));
+      transition: 200ms ease-in-out;
+    }
+  }
+
+  // For Icons we put the shapes in the svg and hid what was not needed
+  // To avoid the issues with SVG vs CSS we relied on the SVG mainly for the heavy work
+  .burger{
+    cursor: pointer;
+  }
+
+  .close{
+    cursor: pointer;
+    --icon-color: var(--bg-color);
+
+    &:hover{
+      --icon-color: var(--nav-active-clr);
+    }
+  }
+}

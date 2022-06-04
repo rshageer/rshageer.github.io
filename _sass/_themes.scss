@@ -1,0 +1,104 @@
+:root {
+  --font-family-main: 'Open Sans', sans-serif;
+  --font-family-accent: 'Bree Serif', serif;
+  --font-size-100: 12px;
+  --font-size-200: 14px;
+  --font-size-300: 16px;
+  --font-size-400: 18px;
+  --font-size-500: 20px;
+  --font-size-600: 24px;
+  --font-size-700: 30px;
+  --font-size-800: 36px;
+  --font-size-900: 48px;
+  --font-size-1000: 60px;
+  --font-size-1100: 72px;
+
+  --clr-neutral-100: #F0F4F8;
+  --clr-neutral-200: #D9E2EC;
+  --clr-neutral-300: #BCCCDC;
+  --clr-neutral-400: #9FB3C8;
+  --clr-neutral-500: #829AB1;
+  --clr-neutral-600: #627D98;
+  --clr-neutral-700: #486581;
+  --clr-neutral-800: #334E68;
+  --clr-neutral-900: #243B53;
+  --clr-neutral-1000: #102A43;
+
+  --clr-primary-100: #ACC4E9;
+  --clr-primary-200: #91A7C8;
+  --clr-primary-300: #6C87B0;
+  --clr-primary-400: #526B90;
+  --clr-primary-500: #405472;
+  --clr-primary-600: #25364F;
+
+  --clr-shade-100:#D3DFF5;
+  --clr-shade-200:#C0CCE3;
+  --clr-shade-300:#ABB6CB;
+  --clr-shade-400:#8E9BB6;
+  --clr-shade-500:#5B6A86;
+  --clr-shade-600:#364768;
+
+  --clr-accent-100:#FFA584;
+  --clr-accent-200:#E78764;
+  --clr-accent-300:#D17756;
+  --clr-accent-400:#B96445;
+  --clr-accent-500:#A45335;
+  --clr-accent-600:#853518;
+
+  --clr-accent2-100:#CEF0D1;
+  --clr-accent2-200:#B5E5B9;
+  --clr-accent2-300:#9FCAA3;
+  --clr-accent2-400:#86AD8A;
+  --clr-accent2-500:#719475;
+  --clr-accent2-600:#5C795F;
+
+  --clr-highlight-100:#F8E9AE;
+  --clr-highlight-200:#F3DF8F;
+  --clr-highlight-300:#EAD78A;
+  --clr-highlight-400:#CCBB74;
+  --clr-highlight-500:#8D814F;
+  --clr-highlight-600:#59512F;
+
+  --clr-highlight2-100:#F3EB4F;
+  --clr-highlight2-200:#E1D839;
+  --clr-highlight2-300:#CFC734;
+  --clr-highlight2-400:#BEB628;
+  --clr-highlight2-500:#ADA51B;
+  --clr-highlight2-600:#8E8704;
+
+  --spc-100: .25rem;
+  --spc-200: .5rem;
+  --spc-300: .75rem;
+  --spc-400: 1rem;
+  --spc-500: 1.5rem;
+  --spc-600: 2rem;
+  --spc-700: 3rem;
+  --spc-800: 4rem;
+  --spc-900: 6rem;
+  --spc-1000: 8rem;
+  --spc-1100: 12rem;
+  --spc-1200: 16rem;
+  --spc-1300: 24rem;
+  --spc-1400: 32rem;
+  --spc-1500: 40rem;
+  --spc-1600: 48rem;
+
+}
+
+@mixin theme($theme: 'default'){
+  @if $theme == 'default' {
+    --bg-color: var(--clr-neutral-100);
+    --font-color: var(--clr-neutral-1000);
+    --font-heading: var(--font-family-accent);
+    --font-main: var(--font-family-main);
+    --font-sz-min: var(--font-size-300);
+    --font-sz-max: var(--font-size-500);
+    --link-color: var(--clr-accent-200);
+    --link-color-hover: var(--clr-accent-100);
+    --highlight-clr: var(--clr-accent2-400);
+    --accent-clr: var(--clr-highlight-300);
+    --logo-clr-1: var(--clr-accent-300);
+    --logo-clr-2: var(--clr-accent-600);
+    --nav-clr: var(--clr-neutral-600);
+  }
+}

@@ -1,0 +1,11 @@
+
+// Horizontal Rule at the bottom of the text
+.hr-after::after{
+  content: ' ';
+  display: block;
+  width: var(--hr-width, 75%);
+  height: var(--hr-height, var(--spc-100));
+  border-radius: 1000px;
+  background-color: var(--hr-clr, var(--clr-accent2-400));
+  margin: var(--hr-space ,var(--spc-600)) auto 0;
+}

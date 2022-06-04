@@ -1,0 +1,7 @@
+.container{
+  max-width: $screen_md;
+  margin: 0 auto;
+  padding: var(--spc-400) var(--spc-600);
+  position: relative;
+  overflow: hidden;
+}

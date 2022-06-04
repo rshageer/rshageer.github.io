@@ -1,0 +1,31 @@
+
+@function strip-unit($value){
+  @return $value / ($value * 0 + 1)
+}
+
+@mixin createScale($class-name, $prop-name, $var-name, $limit){
+
+  @for $inc from 0 to $limit {
+    .#{$class-name + "-" + $inc}{
+      #{$prop-name}:var(#{$var-name + "-" + ($inc * 100)});
+    }
+  }
+}
+
+@mixin fluidify($screen_min, $screen_max, $min_sz, $max_sz, $prop){
+  @media screen and (min-width: $screen_min){
+    #{$prop}: calc(#{$min_sz} + #{strip-unit($max_sz - $min_sz)} * ((100vw - #{$screen_min}) / #{strip-unit($screen_max - $screen-sm)}))
+  }
+
+  @media screen and (min-width: $screen_max){
+    #{$prop}: $max_sz
+  }
+}
+
+@mixin fluidify-text($screen_min, $screen_max, $min_sz, $max_sz) {
+  @include fluidify($screen_min, $screen_max, $min_sz, $max_sz, 'font-size')
+}
+
+
+// font-size: calc(16 + 4 * ((100vw - 320) / 960)); } }
+// font-size: calc(16px + 4 * ((100vw - 320px) / 960)); } }

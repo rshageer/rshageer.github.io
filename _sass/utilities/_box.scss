@@ -1,0 +1,14 @@
+
+@include createScale("mb", "margin-bottom", "--spc", 16 );
+@include createScale("mt", "margin-top", "--spc", 16 );
+@include createScale("mr", "margin-right", "--spc", 16 );
+@include createScale("ml", "margin-left", "--spc", 16 );
+
+
+@include createScale("pb", "padding-bottom", "--spc", 16 );
+@include createScale("pt", "padding-top", "--spc", 16 );
+@include createScale("pr", "padding-right", "--spc", 16 );
+@include createScale("pl", "padding-left", "--spc", 16 );
+
+
+@include createScale("w", "max-width", "--spc", 16 );

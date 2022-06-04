@@ -1,0 +1,85 @@
+
+body {
+  @include theme;
+  font-family: var(--font-main);
+  font-size: $font-sz-min;
+  color: var(--font-color);
+  line-height: 1.5;
+
+  background-color: var(--bg-color);
+
+  @include fluidify-text($screen_sm, $screen_md, $font-sz-min, $font-sz-max);
+}
+
+a {
+  color: var(--link-color);
+
+  &:hover{
+    color: var(--link-color-hover);
+    text-decoration: underline;
+  }
+}
+
+h1,h2,h3,h4,h5{
+  font-family: var(--font-heading);
+  font-weight: normal;
+}
+
+h1 {
+  @include fluidify-text($screen_sm, $screen_md, $font-h1-min, $font-h1-max);
+}
+
+h2 {
+  @include fluidify-text($screen_sm, $screen_md, $font-h2-min, $font-h2-max);
+}
+
+h3 {
+  @include fluidify-text($screen_sm, $screen_md, $font-h3-min, $font-h3-max);
+}
+
+
+
+p{
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+
+// Form Elements
+
+input[type="text"],
+input[type="email"],
+select,
+textarea
+{
+  padding: var(--spc-100) var(--spc-300);
+  border: none;
+  border-top-left-radius: var(--br-left, var(--spc-100));
+  border-bottom-left-radius: var(--br-left, var(--spc-100));
+  border-top-right-radius: var(--br-right, var(--spc-100));
+  border-bottom-right-radius: var(--br-right, var(--spc-100));
+
+  background-color: var(--clr-neutral-100);
+  border-color: var(--clr-neutral-100);
+  color: var(--clr-neutral-700);
+}
+
+button {
+  padding: var(--spc-100) var(--spc-300);
+  border: none;
+  border-top-left-radius: var(--br-left, var(--spc-100));
+  border-bottom-left-radius: var(--br-left, var(--spc-100));
+  border-top-right-radius: var(--br-right, var(--spc-100));
+  border-bottom-right-radius: var(--br-right, var(--spc-100));
+
+  background-color: var(--bg-clr, var(--clr-neutral-700));
+  border-color: var(--bg-clr, var(--clr-neutral-700));
+  color: var(--text-clr, var(--clr-neutral-100));
+
+  &:hover{
+    background-color: var(--hover-bg-clr, var(--clr-neutral-800));
+    border-color: var(--hover-bg-clr, var(--clr-neutral-800));
+    color: var(--hover-text-clr, var(--clr-neutral-200));
+  }
+}

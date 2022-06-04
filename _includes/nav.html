@@ -1,0 +1,28 @@
+<nav class="menu" role="navigation">
+  <button class="">
+    <span class="text visually-hidden">Open Menu</span>
+    <span class="icon">
+      <svg class="burger" viewbox="0 0 100 80">
+        <rect width="100" height="20" rx="13" />
+        <rect y="30" width="100" height="20" rx="13" />
+        <rect y="60" width="100" height="20" rx="13" />
+      </svg>
+    </span>
+  </button>
+  <ul role="list">
+    <button class="">
+      <span class="text visually-hidden">Close Menu</span>
+      <span class="icon">
+        <svg class="close" viewbox="0 0 100 80">
+          <rect x="16.13961" y="-15.071068" height="16" width="95" rx="5" transform="rotate(45)" />
+          <rect x="-40.428932" y="55.63961" height="16" width="95" rx="5" transform="rotate(-45)" />
+        </svg>
+      </span>
+    </button>
+    <li><a class="{%if page.nav == 'home'%} active {% endif %}" href="">Home</a></li>
+    <li><a class="{%if page.nav == 'portfolio' %} active {% endif %}" href="">Products</a></li>
+    <li><a class="{%if page.nav == 'blog' %} active {% endif %}" href="">Blog</a></li>
+    <li><a class="{%if page.nav == 'about'%} active {% endif %}" href="">About</a></li>
+    <li><a class="{%if page.nav == 'contact' %} active {% endif %}" href="">Contact</a></li>
+  </ul>
+</nav>

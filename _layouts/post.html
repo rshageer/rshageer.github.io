@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<div class="container">
+  {% include header-default.html %}
+  <main class="post article-width center-h">
+    <section class="title hr-after align-center">
+      <h1 class="highlight-keywords">{{page.title | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
+    </section>
+
+    <section class="categories mb-10">
+      <ul role="list">
+        {% for category in page.categories%}
+        <li>{{category}}</li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% if page.summary %}
+    <section class="summary flow br">
+      <h2>TL;DR</h2>
+      <p>{{page.summary}}</p>
+    </section>
+    {% endif %}
+
+    <section class="article flow">
+      {{content}}
+    </section>
+  </main>
+</div>

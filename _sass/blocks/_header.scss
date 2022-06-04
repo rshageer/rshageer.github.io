@@ -1,0 +1,33 @@
+.header{
+  display: flex;
+  height: var(--spc-1000);
+  
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  font-family: var(--font-heading);
+  img{
+    max-width: var(--spc-700);
+    margin-right: var(--spc-200);
+    flex-grow: 1;
+  }
+
+  .logo {
+    flex-grow: 1;
+    font-size: var(--font-size-700);
+    .first{
+      color: var(--logo-clr-1);
+    }
+    .second{
+      color: var(--logo-clr-2);
+    }
+  }
+
+  @media screen and (max-width: $bp-nav) {
+    .logo{
+      flex-grow: 0;
+    }
+    justify-content: space-around;
+  }
+}

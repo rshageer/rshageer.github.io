@@ -10,6 +10,9 @@
       #{$prop-name}:var(#{$var-name + "-" + ($inc * 100)});
     }
   }
+  .#{$class-name + "-auto"}{
+    #{$prop-name}:auto;
+  }
 }
 
 @mixin fluidify($screen_min, $screen_max, $min_sz, $max_sz, $prop){

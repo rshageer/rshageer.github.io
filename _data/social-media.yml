@@ -1,0 +1,13 @@
+sites:
+  - name: email
+    link: mailto:riaz.shageer@gmail.com
+    img: https://dummyimage.com/20x16/ccc/333
+  - name: upwork
+    link: https://upwork.com
+    img: https://dummyimage.com/20x16/ccc/333
+  - name: linkedIn
+    link: https://upwork.com
+    img: https://dummyimage.com/20x16/ccc/333
+  - name: twitter
+    link: https://upwork.com
+    img: https://dummyimage.com/20x16/ccc/333

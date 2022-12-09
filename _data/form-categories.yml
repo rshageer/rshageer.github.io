@@ -1,0 +1,11 @@
+categories:
+  - name: Business Automation
+    id: business-automation
+  - name: Application Development
+    id: app-dev
+  - name: Freelance Services
+    id: freelance
+  - name: Our Products
+    id: products
+  - name: Other
+    id: other

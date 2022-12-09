@@ -1,0 +1,29 @@
+<article aria-label="Navigation Bar">
+{% if include.isMain %}
+    {% assign label = 'main'%}
+    {% assign navProps = 'aria-expanded="false"'%}
+    <button><span class="visually-hidden">Menu</span></button>
+{% else %}
+        {% assign label = 'secondary'%}
+    {% endif %}
+    <nav {{ navProps }} aria-label="{{ label }}">
+        {% if include.isMain %}
+        <button><span class="visually-hidden">Close Menu</span></button>
+        {% endif %}
+        <ul>
+            <li><a href="">Home</a> </li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Success Stories</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        {% if include.isMain %}
+        <section class="flow">
+            <h2 class="visually-hidden">Set up A meeting</h2>
+            <button><span>BOOK A MEETING</span></button>
+            <button><span>START A CONTRACT</span></button>
+        </section>
+        {% endif %}
+    </nav>
+</article>

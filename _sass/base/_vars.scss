@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;1,600&family=Titillium+Web:ital@0;1,wght@1,600&display=swap');
+
+:root{
+  --font-family-primary: 'Public Sans', sans-serif;
+  --font-family-secondary: 'Titillium Web', sans-serif;
+
+
+  --font-size-100: 16px;
+  --font-size-200: 18px;
+  --font-size-300: 20px;
+  --font-size-400: 24px;
+  --font-size-500: 26px;
+  --font-size-600: 32px;
+  --font-size-700: 36px;
+  --font-size-800: 42px;
+  --font-size-900: 46px;
+
+  --clr-primary-400: #2DB67D;
+  --clr-primary-500: #199D66;
+
+  --clr-grey-300: #333333;
+  --clr-grey-500: #666666;
+}
+
+h1{
+  font-family: var(--font-family-primary);
+}

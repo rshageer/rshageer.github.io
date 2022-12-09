@@ -1,0 +1,23 @@
+---
+layout: base
+---
+
+<h1 class="visually-hidden">{{page.heading}}</h1>
+
+{% include hero.html %}
+
+<section aria-label="Freelance Services">
+  {% include home_services.html %}
+</section>
+
+<section aria-label="Some of our products you can download">
+  {% include home_products.html %}
+</section>
+
+<aside aria-labelledby="Pointers on Business Automation">
+  {% include home_automation.html %}
+</aside>
+
+<section aria-label="Summary of our blog posts">
+  {% include home_blog-posts.html %}
+</section>

@@ -1,0 +1,25 @@
+body{
+    // Typography
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-100);
+    color: var(--clr-grey-500);
+
+    // Box
+    padding: 2.2rem 1rem;
+}
+
+$headings: h1 h2 h3 h4 h5 h6;
+
+@each $heading in $headings{
+    #{heading}{
+        color: var(--clr-grey-300);
+    }
+}
+
+h2{
+    font-size: var(--h1-size, var(--font-size-500));
+}
+
+:focus{
+    outline: 1px dashed var(--clr-primary-500);               
+}

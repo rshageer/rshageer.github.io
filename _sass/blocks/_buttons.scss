@@ -1,0 +1,20 @@
+.button,
+button {
+    //Typography
+    font-family: var(--font-family-secondary);
+    color: var(--btn-text, white);
+    text-decoration: none;
+    
+    //box
+    border: 1px solid var(--btn-border, var(--clr-primary-400));
+    padding: .75rem 1.5rem;
+    background-color: var(--btn-bg, var(--clr-primary-400));
+    display: inline-block;
+
+    &:hover {
+        --btn-bg: var(--clr-primary-500);
+        --btn-border: var(--clr-primary-500);
+        // background-color: red;
+
+    }
+}

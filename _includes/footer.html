@@ -1,0 +1,29 @@
+<footer aria-label="More Information">
+    <section>
+        <h2>Logo and Social Media Information</h2>
+        <img src="https://dummyimage.com/176x30/ccc/333" alt="">
+
+        <article aria-label="Social Media Contact">
+            <h3>CONNECT WITH ME</h3>
+            <div aria-label="List of Social Media Link">
+                {% for socialMedia in site.data.social-media.sites %}
+                    <a href="{{ socialMedia.link }}"><img src="{{ socialMedia.img }}" alt="{{ socialMedia.name }}"></a>
+                {% endfor %}
+            </div>
+        </article>
+    </section>
+    <section>
+        <h2>Site information and Newsletter Signup</h2>
+        {% include nav.html %}
+        <article aria-label="Newsletter Signup">
+            <form action="/">
+                <label for="newsletterEmail">SUBSCRIBE TO NEWSLETTER</label>
+                <input type="email" name="newsletterEmail" id="newsletterEmail" placeholder="my@email.com">
+            </form>
+        </article>
+    </section>
+    <section>
+        <h2>Copyright</h2>
+        <p>All rights reserved RiazShageer 2022</p>
+    </section>
+</footer>

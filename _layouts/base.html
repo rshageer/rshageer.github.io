@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <!-- <link rel="stylesheet" href="/assets/css/print.css" media="print"> -->
+
+    <meta name="description" content="{{ page.description }}">
+    <meta property="og:title" content="{% if page.ogTitle%}{{ page.ogTitle}}{% else %}{{ page.title}}{% endif %}">
+    <meta property="og:description"
+        content="{% if page.ogDescription %}{{ page.ogDescription }}{% else %}{{ page.description }}{% endif %}">
+    <meta property="og:image" content="{{ page.ogImage }}">
+    <meta property="og:image:alt" content="{{ page.ogImageAlt }}">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta name="twitter:card"
+        content="{%if page.twitterImage%}{{ page.twitterImage }}{% else %}{{ page.ogImage }}{% endif %}">
+    <link rel="canonical" href="{{ page.url | absolute_url}}">
+
+    <!-- <link rel="icon" href="/favicon.ico"> -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/my.webmanifest">
+    <meta name="theme-color" content="#FF00FF">
+
+</head>
+
+<body>
+    {% include header.html %}
+    {{content}}
+    {% include footer.html %}
+</body>
+
+</html>

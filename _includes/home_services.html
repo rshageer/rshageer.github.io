@@ -1,0 +1,19 @@
+<article aria-label="List of Freelance Services">
+  <header aria-label="Freelance Services heading">
+    <h2 id="servicesHeading">Freelance Services</h2>
+    <section aria-label="Freelance services teaser">
+      <img src="https://dummyimage.com/32x32/ccc/333" alt="">
+      <p>Over 250+ Satisfied Clients</p>
+    </section>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsa odio aut repellat reiciendis.</p>
+  </header>
+  <section aria-label="List of Freelance Services">
+    {% for service in site.services %}
+      <article aria-label="{{ service.title }}">
+        <img src="{{ service.img }}" alt="{{ service.imgAlt}}">
+        <h3>{{ service.title}}</h3>
+        <p aria-label="Description of {{ service.title }} services">{{ service.description}}</p>
+      </article>
+    {% endfor %}
+  </section>
+</article>

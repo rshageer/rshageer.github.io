@@ -1,3 +1,9 @@
 .flow > * + * {
-  margin-top: var(--flow-space, 1em);
+  margin-top: var(--flow-space, 1rem);
+}
+
+.flex {
+  display: flex;
+  gap: var(--flex-gap, 1rem);
+  flex-wrap: wrap;
 }

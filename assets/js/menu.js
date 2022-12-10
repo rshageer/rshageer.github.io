@@ -42,4 +42,5 @@ class Menu {
         }
     }
 }
+
 export const menu = new Menu()

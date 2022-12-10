@@ -1,23 +1,25 @@
-<form action="" aria-label="Contact">
+<form action="" aria-label="Contact" class="flow">
     <h2>Let's Connect</h2>
-    <fieldset>
+    <fieldset class="flow">
         <legend>I'm interested in...</legend>
-        {% for category in site.data.form-categories.categories %}
-            <label for="{{category.id}}">{{category.name}}</label>
-            <input type="checkbox" name="{{category.id}}" id="{{category.id}}">
-        {% endfor %}
+        <article aria-label="Reasons for Contacting" class="flex">
+            {% for category in site.data.form-categories.categories %}
+            <input type="checkbox" name="{{category.id}}" id="{{category.id}}" class="visually-hidden">
+            <label for="{{category.id}}" class="button | checkbox-btn">{{category.name}}</label>
+            {% endfor %}
+        </article>
     </fieldset>
     <section aria-label="Name">
-        <label for="name">Name</label>
+        <label for="name" class="visually-hidden">Name</label>
         <input type="text" name="name" id="name" placeholder="Your Name">
     </section>
     <section aria-label="Name">
-        <label for="email">Email</label>
+        <label for="email" class="visually-hidden">Email</label>
         <input type="email" name="" id="email" placeholder="Your email">
     </section>
     <section aria-label="Message">
-        <label for="message">Message</label>
+        <label for="message" class="visually-hidden">Message</label>
         <textarea name="message" id="message" cols="30" rows="1" placeholder="Type your message here"></textarea>
     </section>
-    <button id="btnContactFormSubmit" type="submit">Send Message</button>
+    <button id="btnContactFormSubmit" type="submit">SEND MESSAGE</button>
 </form>

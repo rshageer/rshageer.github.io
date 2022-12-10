@@ -1,0 +1,12 @@
+- text: Home
+  link: /
+- text: Services
+  link: /services
+- text: Success Stories
+  link: /success-stories
+- text: Blog
+  link: /blog
+- text: About
+  link: /about
+- text: Contact
+  link: /contact

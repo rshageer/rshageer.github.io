@@ -1,0 +1,10 @@
+.img-tab{
+  padding-inline: 1rem;
+  padding-block: .375rem;
+  border-radius: 1000rem;
+  background-color: var(--img-tab-bg, white);
+
+  position: absolute;
+  transform: translateY(-50%) translateX(2rem);
+  z-index: 10;
+}

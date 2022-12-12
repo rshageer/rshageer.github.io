@@ -10,3 +10,14 @@
     z-index: 1;
     backdrop-filter: blur(.15rem);
 }
+
+
+// Shadows
+
+.shadow-100 {
+    box-shadow: var(--shadow-100);
+}
+
+.shadow-200 {
+    box-shadow: var(--shadow-200);
+}

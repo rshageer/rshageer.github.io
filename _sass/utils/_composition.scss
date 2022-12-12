@@ -1,3 +1,11 @@
+.container{
+  width: 100%;
+  max-width: 1140px;
+  margin-inline: auto;
+}
+
+
+// flex
 .flow > * + * {
   margin-top: var(--flow-space, 1rem);
 }
@@ -14,4 +22,11 @@
 
 .row{
   flex-direction: row;
+}
+
+
+// full bleed
+.full-bleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
 }

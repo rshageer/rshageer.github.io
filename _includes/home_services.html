@@ -1,13 +1,15 @@
-<article aria-label="List of Freelance Services">
-  <header aria-label="Freelance Services heading">
-    <h2 id="servicesHeading">Freelance Services</h2>
-    <section aria-label="Freelance services teaser">
-      <img src="https://dummyimage.com/32x32/ccc/333" alt="">
-      <p>Over 250+ Satisfied Clients</p>
+<article aria-label="List of Freelance Services" class="home-services | container | shadow-200">
+  <header aria-label="Freelance Services heading" class="home-services__header | flex">
+    <section aria-label="Heading and Subtitle" class="flow">
+      <h2 id="servicesHeading" class="weight-medium txt-clr-grey-300">Freelance <span class="txt-clr-grey-500">Services</span></h2>
+      <section aria-label="Freelance services teaser" class="home-services__subtitle | flex">
+        <img src="/assets/images/social/upwork-clr.png" alt="Upwork Icon">
+        <p>Over 250+ Satisfied Clients</p>
+      </section>
     </section>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsa odio aut repellat reiciendis.</p>
+    <p aria-label="Pullout Description" class="home-services__pullout | txt-clr-grey-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsa odio aut repellat reiciendis.</p>
   </header>
-  <section aria-label="List of Freelance Services">
+  <section aria-label="List of Freelance Services" class="home-services__panel">
     {% for service in site.services %}
       <article aria-label="{{ service.title }}">
         <img src="{{ service.img }}" alt="{{ service.imgAlt}}">

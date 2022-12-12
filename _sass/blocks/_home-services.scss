@@ -1,0 +1,30 @@
+.home-services{
+    --h2-size: 1.75rem; 
+    // --flow-space: 2rem;
+    margin-top: 5rem;
+    padding-inline: 1rem;
+    padding-block: 1.5rem;
+    border-radius: 1.5rem;
+}
+
+.home-services__header{
+    --flow-space: 0rem;
+
+}
+
+.home-services__subtitle {
+    --flex-gap: .75rem;
+    font-size: var(--font-size-200);
+    & > img {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+.home-services__pullout {
+    font-size: 14px;
+}
+
+.home-services__panel {
+    margin-top: 3rem;
+}

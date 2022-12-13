@@ -1,13 +1,19 @@
 .home-hero{
   --flow-space: 3rem;
+  justify-content: space-between;
+
+  margin-inline: auto;
+  margin-left: 100;
 }
 
 .home-hero__text{
   --flow-space: 1rem;
-  
+  margin-block-start: 29px;
+  max-width: 515px;
 }
 
 
 .home-hero__img{
   position: relative;
+  max-width: 503px;
 }

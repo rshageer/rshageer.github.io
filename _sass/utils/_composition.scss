@@ -1,7 +1,7 @@
 .container{
-  width: 100%;
-  max-width: 1140px;
-  margin-inline: auto;
+  width: var(--container-width, 100%);
+  max-width: var(--containter-max-width, 1140px);
+  margin-inline: var( --container-margin-inline, auto);
 }
 
 
@@ -29,4 +29,8 @@
 .full-bleed {
   width: 100vw;
   margin-left: calc(50% - 50vw);
+}
+
+.full-bleed > .container {
+  padding-inline: 1rem;
 }

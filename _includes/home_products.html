@@ -1,22 +1,22 @@
-<article aria-label="List of our Products">
+<article aria-label="List of our Products" class="home-products">
   <header class="decorated-heading">
     <h3>Latest Works</h3>
     <h2 id="productsHeading">Some of our Work</h2>
   </header>
-  <section aria-labelledby="productsHeading">
+  <section aria-labelledby="productsHeading" class="home-products__list | flow">
     {% for product in site.products%}
-    <article aria-label="{{ product.title }} Information Card">
+    <article aria-label="{{ product.title }} Information Card" class="home-products__card">
       <img src="{{ product.img }}" alt="{{ product.imgAlt }}">
       <section aria-labelledby="{{ product.title }}Heading">
         <h3 id="{{ product.title }}Heading">{{ product.title }}</h3>
         <p>{{product.summary}}</p>
-        <a href="{{ product.link }}">Learn more</a>
+        <a href="{{ product.link }}" class="icon-arrow-after">Learn more</a>
       </section>
     </article>
     {% endfor %}
   </section>
   <section aria-label="Link to All Products">
-    <a href="#">View all our products</a>
+    <a href="#" class="button">View all our products</a>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eligendi deserunt ea quaerat quibusdam tempora aperiam fugiat vitae. Odit dicta consequuntur optio. Fugiat ab accusamus commodi impedit aliquam.
     </p>

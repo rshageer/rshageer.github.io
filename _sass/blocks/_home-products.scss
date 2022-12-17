@@ -1,0 +1,18 @@
+.home-products{
+  &__list{
+    --flow-space: 3rem;
+  }
+}
+
+.home-products__card {
+  position: relative;
+  & > section {
+    position: absolute;
+    width: 85%;
+    border-top-right-radius: 2.625rem;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+  }
+}

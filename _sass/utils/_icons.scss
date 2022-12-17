@@ -1,0 +1,6 @@
+.icon-arrow-after{
+  &::after{
+    content: url(/assets/images/icons/arrow-icon.svg);
+    margin-inline-start: .75rem;
+  }
+}

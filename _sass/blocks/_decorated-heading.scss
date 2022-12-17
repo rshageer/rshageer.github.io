@@ -1,0 +1,32 @@
+.decorated-heading{
+ 
+  & > h2 {
+    font-size:28px;
+    font-weight: 500;
+    margin-top: 3rem;
+  }
+
+  & > h3 {
+    --decorated-color: var(--decorated-heading-clr, var(--clr-primary-400));
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-300);
+    font-style: italic;
+    color: var(--decorated-color);
+
+
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      flex-grow: 10;
+      height: 2px;
+      width: 225px;
+      border-radius: 100rem;
+      background-color: var(--decorated-color);
+    }
+  }
+}

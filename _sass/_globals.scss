@@ -24,3 +24,12 @@ h2{
 :focus{
     outline: 1px dashed var(--clr-primary-500);               
 }
+
+a {
+  text-decoration: none;
+  color: var(--clr-primary-400);
+  font-weight: 600;
+  &:hover{
+    color: var(--clr-primary-500);
+  }
+}

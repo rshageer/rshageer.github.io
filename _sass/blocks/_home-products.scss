@@ -44,8 +44,15 @@
     left: 0;
     background-color: white;
 
+    transition: transform $animation;
+    cursor: pointer;
+
     & > p {
       padding-block: .75rem;
+    }
+
+    &[data-expanded="false"]{
+        transform: translateY(75%);
     }
   }
 }

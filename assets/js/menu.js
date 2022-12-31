@@ -36,11 +36,13 @@ class Menu {
     #setOverlay(){
         if(!menu.isExpanded){
             menu.mainNav.classList.add('overlay');
+            menu.mainNav.classList.add('overlay-full-screen');
             menu.firstLink.focus();
         } else {
             menu.mainNav.classList.remove('overlay')
+            menu.mainNav.classList.remove('overlay-full-screen')
         }
     }
 }
 
-export const menu = new Menu()
+export const menu = new Menu();

@@ -6,6 +6,10 @@ $screen-md: 1007px;
 // Spacing;
 $spacing: 4px, 8px, 12px, 16px, 24px, 32px, 48px, 64px, 96px, 128px, 192px, 256px, 384px, 512px, 640px, 768px; 
 
+
+// Animation;
+$animation: 250ms ease-in-out;
+
 :root{
   --font-family-primary: 'Public Sans', sans-serif;
   --font-family-secondary: 'Titillium Web', sans-serif;

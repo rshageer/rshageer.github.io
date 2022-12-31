@@ -7,8 +7,8 @@
     {% for product in site.products%}
     <article aria-label="{{ product.title }} Information Card" class="home-products__card">
       <img src="{{ product.img }}" alt="{{ product.imgAlt }}">
-      <section aria-labelledby="{{ product.title }}Heading">
-        <h3 id="{{ product.title }}Heading">{{ product.title }}</h3>
+      <section class="home-products__info" aria-labelledby="{{ product.title }}Heading" data-expanded="false">
+        <h3 class="home-products__card-header"  id="{{ product.title }}Heading">{{ product.title }}</h3>
         <p>{{product.summary}}</p>
         <a href="{{ product.link }}" class="icon-arrow-after">Learn more</a>
       </section>

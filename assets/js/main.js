@@ -1,9 +1,10 @@
-import {menu} from './menu.js';
-
+import { menu } from './menu.js';
+import { homeProductPanel } from './home-products.js';
 
 (function(){
     const components = [
-        menu
+        menu,
+        homeProductPanel,
     ]
 
     for(const component of components){

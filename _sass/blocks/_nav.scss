@@ -22,7 +22,6 @@ $navPadding: 2rem;
 
 .nav-main__close {
     background-image: url('/assets/images/icon-close.svg');
-    // content: url('/assets/images/icon-close.svg');
 }
 
 .nav-main__bar{
@@ -35,7 +34,7 @@ $navPadding: 2rem;
     position: fixed;
     z-index: 100;
     transform: translateX(100%);
-    transition: transform 250ms ease-in-out;
+    transition: transform $animation;
 
     & > header {
         padding-left: $navPadding;

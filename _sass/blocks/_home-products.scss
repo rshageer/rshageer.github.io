@@ -11,17 +11,11 @@
   gap: 1.5em;
   overflow: scroll;
 
-  &::-webkit-scrollbar {
-    display: none;
-  }
-
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 
 .home-products__card {
   position: relative;
-  width: 95%;
+  width: 85%;
   min-width: 322px;
   min-height: 266px;
   max-width: 556px;

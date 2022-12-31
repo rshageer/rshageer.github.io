@@ -3,7 +3,7 @@
     <h3>Latest Works</h3>
     <h2 id="productsHeading">Some of our Work</h2>
   </header>
-  <section aria-labelledby="productsHeading" class="home-products__list">
+  <section aria-labelledby="productsHeading" class="home-products__list | hide-scrollbars">
     {% for product in site.products%}
     <article aria-label="{{ product.title }} Information Card" class="home-products__card">
       <img src="{{ product.img }}" alt="{{ product.imgAlt }}">

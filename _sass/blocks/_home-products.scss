@@ -49,3 +49,8 @@
     }
   }
 }
+
+.home-products__description {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+}

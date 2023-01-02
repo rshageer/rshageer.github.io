@@ -4,7 +4,7 @@
         <legend>I'm interested in...</legend>
         <article aria-label="Reasons for Contacting" class="flex">
             {% for category in site.data.form-categories.categories %}
-            <input type="checkbox" name="{{category.id}}" id="{{category.id}}" class="visually-hidden">
+            <input type="checkbox" name="{{category.id}}" id="{{category.id}}" class="hidden">
             <label for="{{category.id}}" class="button | checkbox-btn">{{category.name}}</label>
             {% endfor %}
         </article>

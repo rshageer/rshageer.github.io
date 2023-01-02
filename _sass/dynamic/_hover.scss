@@ -1,0 +1,8 @@
+
+@mixin touchHover($selector) {
+  @media (hover:hover) and (pointer:fine){
+    #{$selector}:hover{
+      @content
+    }
+  }
+}

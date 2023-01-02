@@ -9,3 +9,13 @@
   width: 1px;
   white-space: nowrap;
 }
+
+.hidden{
+  display: none;
+}
+
+.hidden-offscreen{
+  opacity: 0;
+  position: absolute;
+  left: -9999;
+}

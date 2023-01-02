@@ -13,11 +13,11 @@ $navPadding: 2rem;
     height: 26px;
     padding: 0;
     margin: 0;
+  }
 
-    &:hover{
-        --btn-bg: transparent;
-        --btn-border: transparent;
-    }
+@include touchHover('.nav-main__control'){
+  --btn-bg: transparent;
+  --btn-border: transparent;
 }
 
 .nav-main__close {

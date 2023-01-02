@@ -24,17 +24,19 @@ textarea{
     --btn-border: var(--clr-grey-300);
     --btn-bg: white;
 
-    &:hover{
-        --btn-text: var(--clr-primary-500);
-        --btn-border: var(--clr-primary-500);
-        --btn-bg: white;
-    }
+}
+@include touchHover('.checkbox-btn'){
+  --btn-text: var(--clr-primary-500);
+  --btn-border: var(--clr-primary-500);
+  --btn-bg: white;
+
 }
 
 // .checkbox-btn + input[type="checkbox"]:checked{
 :checked + .checkbox-btn {
     --btn-text: var(--clr-primary-400);
     --btn-border: var(--clr-primary-400);
+    --btn-bg: white;
 }
 
 // Groups

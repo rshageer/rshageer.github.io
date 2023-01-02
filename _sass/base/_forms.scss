@@ -4,6 +4,7 @@ input[type="email"],
 textarea {
     border: none;
     border-bottom: 1px solid var(--input-border, var(--clr-grey-600));
+    padding-block: #{nth($spacing, 2)};
     width: 100%;
     &:focus{
         --input-border: var(--clr-primary-400);

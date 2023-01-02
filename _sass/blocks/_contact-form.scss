@@ -1,0 +1,12 @@
+.contact-form{
+  background-color: white;
+  padding: #{nth($spacing, 4)};
+  margin-inline : #{nth($spacing, 4)};
+
+  &-home{
+    padding-block:#{nth($spacing, 4)}; ;
+    background-image: var(--gradient-multi);
+    background-repeat: no-repeat;
+    background-size: 100% #{nth($spacing, 10)};
+  }
+}

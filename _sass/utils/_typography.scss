@@ -59,3 +59,9 @@
   height: 1.2em;
   background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
 }
+
+.truncate{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

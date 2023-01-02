@@ -31,3 +31,10 @@
 .shadow-200 {
     box-shadow: var(--shadow-200);
 }
+
+
+.bg-dark{
+    background: var(--clr-grey-200);
+    --text-clr:white;
+    --heading-clr: white;
+}

@@ -1,7 +1,7 @@
 .container{
-  width: var(--container-width, 100%);
+  width: var(--container-width, auto);
   max-width: var(--containter-max-width, 1140px);
-  margin-inline: var( --container-margin-inline, auto);
+  margin-inline: var( --container-margin-inline, #{nth($spacing, 5)});
 }
 
 
@@ -18,19 +18,27 @@
 
 .col {
   flex-direction: column;
+  &-reverse{
+    flex-direction: column-reverse;
+  }
 }
 
 .row{
   flex-direction: row;
+  &-reverse{
+    flex-direction: row-reverse;
+  }
 }
 
 
 // full bleed
 .full-bleed {
   width: 100vw;
-  margin-left: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw );
 }
 
-.full-bleed > .container {
-  padding-inline: 1rem;
+.full-bleed .container {
+  // padding-inline: 1rem;
+  // margin-inline: 0rem;
+
 }

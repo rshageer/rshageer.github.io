@@ -4,6 +4,7 @@ button {
     font-family: var(--font-family-secondary);
     color: var(--btn-text, white);
     text-decoration: none;
+    white-space: nowrap;
     
     //box
     border: 1px solid var(--btn-border, var(--clr-primary-400));

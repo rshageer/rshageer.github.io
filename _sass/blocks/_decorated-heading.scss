@@ -1,9 +1,10 @@
 .decorated-heading{
+  margin-block-start: #{ nth($spacing, 5) };
+  margin-block-end: #{ nth($spacing, 9) };
  
   & > h2 {
     font-size:28px;
     font-weight: 500;
-    margin-top: 3rem;
   }
 
   & > h3 {
@@ -24,7 +25,6 @@
       display: inline-block;
       flex-grow: 10;
       height: 2px;
-      width: 225px;
       border-radius: 100rem;
       background-color: var(--decorated-color);
     }

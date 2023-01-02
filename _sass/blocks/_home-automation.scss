@@ -1,0 +1,7 @@
+.home-advisory__list{
+
+    & > * {
+        --flow-space: #{ nth($spacing, 8) };
+    }
+
+}

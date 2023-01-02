@@ -1,23 +1,26 @@
 ---
 layout: base
 ---
-
 <h1 class="visually-hidden">{{page.heading}}</h1>
 
 {% include hero.html %}
 
 <section aria-label="Freelance Services" class="home-section-two | full-bleed mt-11">
-  {% include home_services.html %}
+    {% include home_services.html %}
 </section>
 
-<section class="mt-11" aria-label="Some of our products you can download">
-  {% include home_products.html %}
+<section class="full-bleed | mt-11" aria-label="Some of our products you can download">
+    {% include home_products.html %}
 </section>
 
-<aside class="mt-11" aria-labelledby="Pointers on Business Automation">
-  {% include home_automation.html %}
+<aside class="full-bleed | bg-dark mt-11" aria-labelledby="Pointers on Business Automation">
+    {% include home_automation.html %}
+</aside>
+
+<aside>
+{% include contact-form.html %}
 </aside>
 
 <section class="mt-11" aria-label="Summary of our blog posts">
-  {% include home_blog-posts.html %}
+    {% include home_blog-posts.html %}
 </section>

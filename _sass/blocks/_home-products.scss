@@ -47,10 +47,6 @@
     transition: transform $animation;
     cursor: pointer;
 
-    & > p {
-      padding-block: .75rem;
-    }
-
     &[data-expanded="false"]{
         transform: translateY(75%);
     }
@@ -60,4 +56,12 @@
 .home-products__description {
     flex-direction: column-reverse;
     align-items: flex-start;
+}
+
+.home-products__summary{
+    // display: -webkit-box;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+    // -webkit-line-clamp: 4;
+    // -webkit-box-orient: vertical;
 }

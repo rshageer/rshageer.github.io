@@ -40,3 +40,22 @@
 .readable-width {
   max-width: 60ch;
 }
+
+
+// Text Overflow
+
+.fade-text {
+  position: relative;
+  max-height: calc(var(--line-height, 1.5rem) * var(--lines, 4));
+  overflow: hidden;
+}
+.fade-text::after {
+  content: "";
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: 1.2em;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+}

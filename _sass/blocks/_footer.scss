@@ -1,0 +1,50 @@
+.footer {
+
+  color:white;
+  background-color: var(--clr-grey-200);
+
+  &__container{
+    display: grid;
+    grid-template:
+    "logo"
+    "menu"
+    "social"
+    "subscribe"
+    "copyright"
+    ;
+    & > .nav{
+      grid-area: menu;
+      font-size: var(--font-size-200);
+      & > nav > ul{
+        list-style: none;
+        & > li{
+          display: inline-block;
+          text-align: center;
+          &> a{
+            color:inherit;
+            font-weight: normal;
+          }
+        }
+
+      }
+    }
+  }
+
+  &__logo{
+    grid-area: logo;
+    margin-inline: auto;
+  }
+  
+
+  &__social-media{
+    grid-area: social;
+  }
+
+  &__subscribe{
+    grid-area: subscribe;
+  }
+
+  &__newsletter{
+    grid-area: copyright;
+  }
+}

@@ -1,13 +1,13 @@
 sites:
   - name: email
     link: mailto:riaz.shageer@gmail.com
-    img: https://dummyimage.com/20x16/ccc/333
+    img: /assets/images/social/email-grey.svg
   - name: upwork
     link: https://upwork.com
-    img: https://dummyimage.com/20x16/ccc/333
+    img: /assets/images/social/upwork-grey.svg
   - name: linkedIn
     link: https://upwork.com
-    img: https://dummyimage.com/20x16/ccc/333
-  - name: twitter
+    img: /assets/images/social/linkedin-grey.svg
+  - name: facebook 
     link: https://upwork.com
-    img: https://dummyimage.com/20x16/ccc/333
+    img: /assets/images/social/facebook-grey.svg

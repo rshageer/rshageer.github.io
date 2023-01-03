@@ -9,8 +9,9 @@
 }
 
 .home-services__header{
-    --flow-space: 0rem;
-
+  --flow-space: #{nth($spacing, 5)};
+  --flex-gap: #{nth($spacing, 7)};
+  padding-block-end: #{nth($spacing, 7)};
 }
 
 .home-services__subtitle {
@@ -27,7 +28,7 @@
 }
 
 .home-services__panel {
-    --flow-space: 3rem;
+    --flow-space: #{nth($spacing, 7)};
     margin-top: 3rem;
 }
 

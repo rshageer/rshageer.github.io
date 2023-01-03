@@ -1,11 +1,18 @@
 .contact-form{
   background-color: white;
   padding: #{nth($spacing, 4)};
+  padding-bottom: #{nth($spacing, 7)};
   margin-inline : #{nth($spacing, 4)};
   box-shadow: var(--shadow-300);
 
+  &__header{
+    margin-block-start: #{nth($spacing, 6)};
+    margin-block-end: #{nth($spacing, 7)};
+    text-align: center;
+  }
+
   &-home{
-    padding-block:#{nth($spacing, 4)}; ;
+    padding-block:#{nth($spacing, 4)};
     background-image: var(--gradient-multi);
     background-repeat: no-repeat;
     background-size: 100% #{nth($spacing, 10)};

@@ -1,7 +1,17 @@
-.home-advisory__list{
+.home-advisory{
+  padding-bottom: #{nth($spacing, 10)};
+  padding-top: #{nth($spacing, 6)};
+
+  &__heading{
+    margin-bottom: #{nth($spacing, 9)} ;
+  }
+
+  &__list{
 
     & > * {
-        --flow-space: #{ nth($spacing, 8) };
+      --flow-space: #{ nth($spacing, 7) };
     }
+
+  }
 
 }

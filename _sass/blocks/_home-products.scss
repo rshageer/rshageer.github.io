@@ -60,5 +60,8 @@
 .home-products__description {
     flex-direction: column-reverse;
     align-items: flex-start;
+    --flex-gap: #{nth($spacing, 6)};
+
+    margin-block-start: #{nth($spacing, 7)};
 }
 

@@ -1,6 +1,8 @@
 .home-blog-list{
   --flow-space: #{nth($spacing, 5)};
   &__card {
+    padding-bottom: #{nth($spacing, 6)};
+
     &-details{
       display: flex;
       gap: #{nth($spacing, 3)};

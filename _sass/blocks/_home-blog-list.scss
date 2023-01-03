@@ -2,11 +2,18 @@
   --flow-space: #{nth($spacing, 5)};
   &__card {
     padding-bottom: #{nth($spacing, 6)};
+    max-width: 332px;
+
+    &-image{
+      width:100%;
+      object-fit: cover;
+    }
 
     &-details{
       display: flex;
       gap: #{nth($spacing, 3)};
       margin-block-start: #{nth($spacing, 2)};
+      width:100%;
     }
     &-title{
       font-size: var(--font-size-400);
@@ -29,6 +36,15 @@
       min-width: 84px;
     }
   }
+
+  &__panel{
+    display: flex;
+    gap: #{nth($spacing, 5)};
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   &__btn{ 
     margin-block-start: #{nth($spacing, 6)};
     margin-block-end: #{nth($spacing, 6)};

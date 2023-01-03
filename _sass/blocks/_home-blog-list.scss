@@ -1,0 +1,35 @@
+.home-blog-list{
+  --flow-space: #{nth($spacing, 5)};
+  &__card {
+    &-details{
+      display: flex;
+      gap: #{nth($spacing, 3)};
+      margin-block-start: #{nth($spacing, 2)};
+    }
+    &-title{
+      font-size: var(--font-size-400);
+    }
+    &-date{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: right;
+      color: var(--clr-grey-500);
+    }
+    &-day{
+      display:block;
+      font-size: var(--font-size-300);
+      font-weight: 500;
+    }
+    &-month{
+      display: block;
+      font-size: 13px;
+      min-width: 84px;
+    }
+  }
+  &__btn{ 
+    margin-block-start: #{nth($spacing, 6)};
+    margin-block-end: #{nth($spacing, 6)};
+    text-align: center;
+  }
+}

@@ -2,6 +2,7 @@
   background-color: white;
   padding: #{nth($spacing, 4)};
   margin-inline : #{nth($spacing, 4)};
+  box-shadow: var(--shadow-300);
 
   &-home{
     padding-block:#{nth($spacing, 4)}; ;

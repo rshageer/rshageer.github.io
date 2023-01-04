@@ -1,3 +1,4 @@
+// TODO: Allow Overlay to be clicked to close the menu
 class Menu {
     mainNav;
     navBar;

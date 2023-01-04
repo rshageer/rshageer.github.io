@@ -1,5 +1,6 @@
 .home-section-two {
     background: url('/assets/images/bg/radial-bg.svg') right top no-repeat, url('/assets/images/bg/boxes-bg.png') top left no-repeat;
+    padding-inline: #{nth($spacing, 5)};
 }
 
 .home-main{

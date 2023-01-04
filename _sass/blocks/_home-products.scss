@@ -11,7 +11,8 @@
   flex-direction: row;
   gap: 1.5em;
   overflow: scroll;
-
+  padding-inline-start: calc((100vw - 1140px)/2);
+  // max-width: $max-width;
 }
 
 .home-products__card {

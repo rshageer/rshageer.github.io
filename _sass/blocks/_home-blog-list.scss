@@ -32,7 +32,7 @@
     }
     &-month{
       display: block;
-      font-size: 13px;
+      font-size: var(--font-size-025);
       min-width: 84px;
     }
   }

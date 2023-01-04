@@ -1,22 +1,37 @@
 .footer {
+  padding-block-start: #{nth($spacing, 7)};
 
   color:white;
   background-color: var(--clr-grey-200);
 
+  &::after{
+    content: "";
+    display: block;
+    background-image: var(--gradient-multi);
+    height: #{nth($spacing, 1)};
+    width:100%;
+  }
   &__container{
     display: grid;
-    grid-template:
+    grid-template-areas:
     "logo"
     "menu"
     "social"
     "subscribe"
-    "copyright"
-    ;
+    "copyright";
+    row-gap: #{nth($spacing, 8)};
+    grid-template-rows: repeat(4, auto) #{nth($spacing, 11)};
+    justify-content: center;
+    padding-inline: #{nth($spacing, 4)};
+
     & > .nav{
       grid-area: menu;
       font-size: var(--font-size-200);
       & > nav > ul{
         list-style: none;
+        padding: 0;
+        margin: 0;
+
         & > li{
           display: inline-block;
           text-align: center;
@@ -38,13 +53,79 @@
 
   &__social-media{
     grid-area: social;
+    justify-self: center;
+    --flow-space: #{nth($spacing, 2)};
+
+    & > * {
+      font-size: var(--font-size-050);
+      font-weight: 500;
+      color:white;
+    }
+
+    &-icons{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: #{nth($spacing, 2)}
+    }
   }
 
   &__subscribe{
     grid-area: subscribe;
+    --btn-border: var(--clr-cyan-500);
+    --btn-bg: transparent;
+    --btn-text: var(--clr-cyan-500);
+
+    &-title{
+      display: block;
+      width: fit-content;
+      font-size: var(--font-size-050);
+      font-weight: 500;
+      margin-inline: auto;
+    }
+
+    &-panel{
+      display: flex;
+      flex-direction: row;
+      gap: #{nth($spacing, 3)};
+
+      & > input{
+        background-color: transparent;
+        color: var(--clr-grey-600);
+        
+        &:focus{
+          &::placeholder{
+            color:var(--clr-grey-500);
+          }
+        }
+      }
+    }
+
+    &-btn{
+      font-size: var(--font-size-025);
+      font-weight: 600;
+      padding-block: #{nth($spacing, 1)};
+      padding-inline: #{nth($spacing, 3)}
+    }
+
+    @include touchHover('.footer__subscribe-btn'){
+      --btn-border: var(--clr-primary-500);
+      --btn-bg: transparent;
+      --btn-text: var(--clr-primary-500);
+
+    }
   }
 
-  &__newsletter{
+  &__copyright{
     grid-area: copyright;
+    align-self: end;
+    padding-block-start: #{nth($spacing, 4)};
+    padding-block-end: #{nth($spacing, 5)};
+
+    font-size: var(--font-size-025);
+    color: var(--clr-grey-600);
+    text-align: center;
+
+    border-top: 1px solid var(--clr-grey-600);
   }
 }

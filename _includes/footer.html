@@ -2,9 +2,9 @@
   <section class="footer__container | container" aria-label="Footer Items Container">
     <img class="footer__logo"  src="/assets/images/logo-with-text_dark.svg" alt="Site Logo">
 
-    <article class="footer__social-media" aria-label="Social Media Contact">
+    <article class="footer__social-media | flow" aria-label="Social Media Contact">
       <h3>CONNECT WITH ME</h3>
-      <div aria-label="List of Social Media Link">
+      <div class="footer__social-media-icons"  aria-label="List of Social Media Link">
         {% for socialMedia in site.data.social-media.sites %}
         <a href="{{ socialMedia.link }}"><img src="{{ socialMedia.img }}" alt="{{ socialMedia.name }}"></a>
         {% endfor %}
@@ -14,9 +14,12 @@
     {% include nav.html %}
 
     <article class="footer__subscribe" aria-label="Newsletter Signup">
-      <form action="/">
-        <label for="newsletterEmail">SUBSCRIBE TO NEWSLETTER</label>
-        <input type="email" name="newsletterEmail" id="newsletterEmail" placeholder="my@email.com">
+      <form class="flow" action="/">
+        <label class="footer__subscribe-title" for="newsletterEmail">SUBSCRIBE TO NEWSLETTER</label>
+        <section class="footer__subscribe-panel" aria-label="Newsletter Signup Text Input">
+          <input type="email" name="newsletterEmail" id="newsletterEmail" placeholder="my@email.com">
+          <button class="footer__subscribe-btn">SUBSCRIBE</button>
+        </section>
       </form>
     </article>
 

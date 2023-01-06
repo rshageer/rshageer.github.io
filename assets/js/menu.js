@@ -35,7 +35,8 @@ class Menu {
     }
     
     #setOverlay(){
-        if(!menu.isExpanded){
+      console.log(menu.isExpanded)
+        if(menu.isExpanded !== undefined && !menu.isExpanded){
             menu.mainNav.classList.add('overlay');
             menu.mainNav.classList.add('overlay-full-screen');
             menu.firstLink.focus();

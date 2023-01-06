@@ -8,16 +8,16 @@
 {% endif %}
 <article aria-label="Navigation Bar" class="nav nav-{{ label }}">
     {% if include.isMain %}
-    <button aria-controls="nav-main__bar" class="nav-{{ label }}__control"><span class="visually-hidden">Menu</span></button>
+    <button aria-controls="Nav Button" class="nav-{{ label }}__control"><span class="visually-hidden">Menu</span></button>
     {% endif %}
     <nav {{ navProps }} aria-label="{{ label }}" class="nav-{{ label }}__bar" data-expanded="false">
         {% if include.isMain %}
         <header class="flex">
-            <img src="/assets/images/logo-icon-only.svg" alt="Riaz Shageer Logo">
+            <img class="nav__logo" src="/assets/images/logo-icon-only.svg" alt="Riaz Shageer Logo">
             <button class="nav-{{ label }}__control | nav-{{ label }}__close" aria-controls="nav-main__bar"><span class="visually-hidden">Close Menu</span></button>
         </header>
         {% endif %}
-        <ul class="nav-{{ label }}__links | flex col">
+        <ul class="nav-{{ label }}__links | flex">
         {% for link in site.data.nav%}
             <li {% if page.url == link.link %} class="active" {% endif %}><a href="{{ link.link }}">{{link.text}}</a></li>    
         {% endfor%}

@@ -1,17 +1,21 @@
 .home-hero{
-  --flow-space: 3rem;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  align-content: flex-start;
+  --flex-gap: #{nth($spacing, 10)};
+  --flex-row-gap: #{nth($spacing, 8)};
+
 }
 
 .home-hero__text{
-  --flow-space: 1rem;
-  margin-block-start: 29px;
-  max-width: 515px;
+  max-width: 313px;
 }
 
 
 .home-hero__img{
   position: relative;
   max-width: 503px;
+}
+
+@media (min-width: 849px){
+
 }

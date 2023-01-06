@@ -29,7 +29,7 @@ $navPadding: 2rem;
     --flex-gap:0;
     list-style-type: none;
     padding: 0;
-    
+    margin: 0;
     & > li {
         display:flex;
         align-items: start;
@@ -68,11 +68,8 @@ $navPadding: 2rem;
   display:none;
 }
 
-// Desktop styling; 
-@media (min-width: $screen-md){
-}
 // Mobile Styling
-@media(max-width: $screen-md){
+@media(max-width: 875px){
   .nav-main__bar{
       background-color: white;
       box-shadow: var(--shadow-100);
@@ -97,7 +94,7 @@ $navPadding: 2rem;
 
   .nav-main__links{
     flex-direction: column;
-
+    margin-block: #{nth($spacing, 4)};
     & > li {
         align-items: center;
         flex-direction: row;

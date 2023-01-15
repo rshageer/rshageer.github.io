@@ -5,6 +5,7 @@
   margin-inline : #{nth($spacing, 4)};
   box-shadow: var(--shadow-300);
 
+
   &__header{
     margin-block-start: #{nth($spacing, 6)};
     margin-block-end: #{nth($spacing, 7)};
@@ -16,5 +17,9 @@
     background-image: var(--gradient-multi);
     background-repeat: no-repeat;
     background-size: 100% #{nth($spacing, 10)};
+  }
+
+  &__options {
+    flex-wrap: wrap;
   }
 }

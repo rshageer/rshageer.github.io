@@ -2,7 +2,7 @@
     <h2 class="contact-form__header">Let's Connect</h2>
     <fieldset class="flow">
         <legend>I'm interested in...</legend>
-        <article aria-label="Reasons for Contacting" class="flex">
+        <article aria-label="Reasons for Contacting" class="contact-form__options | flex">
             {% for category in site.data.form-categories.categories %}
             <input type="checkbox" name="{{category.id}}" id="{{category.id}}" class="hidden">
             <label for="{{category.id}}" class="button | checkbox-btn">{{category.name}}</label>

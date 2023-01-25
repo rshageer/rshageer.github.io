@@ -9,9 +9,12 @@
     </section>
     <p class="home-services__header-description" aria-label="Pullout Description" class="home-services__pullout | txt-clr-grey-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsa odio aut repellat reiciendis.</p>
   </header>
-  <section aria-label="List of Freelance Services" class="home-services__panel | flow">
+  <section aria-label="List of Freelance Services" class="home-services__panel | flex">
       {% for service in site.services %}
-        <article class="readable-width" aria-label="{{ service.title }}">
+      {% assign idx={{forloop.index}}%}
+      
+        <article class="readable-width" aria-label="{{ service.title }}"
+          style="--service-counter-image: url(/assets/images/icons/{{idx}}-bullet.svg)">
           <section>
             <img src="{{ service.img }}" alt="{{ service.imgAlt}}">
             <h3>{{ service.title}}</h3>
@@ -19,6 +22,6 @@
           </section>
         </article>
       {% endfor %}
-    <a class= "home-services__cta | button button-rounded" href=""><img src="/assets/images/icons/money-icon.svg" /> Get a Quote</a>
   </section>
+  <a class= "home-services__cta | button button-rounded | mt-10" href=""><img src="/assets/images/icons/money-icon.svg" /> Get a Quote</a>
 </article>
